@@ -1,5 +1,5 @@
 # Sample code from https://github.com/joaomdmoura/crewAI-examples/blob/main/stock_analysis/tools/browser_tools.py
-
+# pip install unstructured
 from crewai import Agent, Task
 from langchain.tools import tool
 from unstructured.partition.html import partition_html
