@@ -29,7 +29,7 @@ class NewsTasks():
         Make sure to use the most recent data as possible.
       """),
       agent=agent,
-      expected_output=dedent(f"""  """)
+      expected_output=dedent(f"""  YOU MOST USE SYNTAX FORMAT FROM EXAMPLE """)
     )
 
   def writer(self, agent):
@@ -56,14 +56,13 @@ class NewsTasks():
         Generative AI Democratizes Knowledge and Skills: Analysts predict Generative AI will make knowledge and skills more accessible, potentially transforming how we learn and work.
         Preparing for an AI-Driven Future: Businesses and organizations are urged to develop strategies to adapt to the changing landscape brought about by advancements in AI.
 
-        This news blog was created by AI.
-        Created on 2023-01-01  
+        This news blog was created automatically by AI on 2023-01-01  
 
         Your final answer MUST be news blog using Inverted Pyramid style. 
         Make it pretty and well formatted for your customer.
         {self.__tip_section()}
       """),
-      agent=agent
+      agent=agent,
       expected_output=dedent(f"""  YOU MOST USED THE PROVIDED EXAMPLE AS FORMAT FOR BUILDING THE NEWS""")
     )
 
