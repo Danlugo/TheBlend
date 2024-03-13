@@ -41,5 +41,13 @@ For this project, Streamlit app is https://theblend.streamlit.app/
 ## Finally, It uses a GoDaddy website to show the feeds.
 Check out TheBlend.ai
 
+### Main Page
+
 ![Alt text](https://github.com/Danlugo/TheBlend/blob/main/images/TheBlendai_home.png "Home")
+
+### Blog
+
 ![Alt text](https://github.com/Danlugo/TheBlend/blob/main/images/TheBendai_blog.png "Blog")
+
+
+
