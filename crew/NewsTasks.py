@@ -1,3 +1,5 @@
+# template from https://github.com/joaomdmoura/crewAI-examples/tree/main/starter_template
+
 from crewai import Task
 from textwrap import dedent
 from datetime import datetime

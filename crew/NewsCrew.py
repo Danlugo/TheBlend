@@ -1,11 +1,10 @@
-from crewai import Crew
-from textwrap import dedent
+# template from https://github.com/joaomdmoura/crewAI-examples/tree/main/starter_template
 
+from crewai import Crew
 from crew.NewsAgents import NewsAgents
 from crew.NewsTasks import NewsTasks
-
 from dotenv import load_dotenv
-import datetime
+from datetime import datetime
 
 load_dotenv()
 
@@ -30,14 +29,14 @@ class NewsCrew:
         )
 
         result = crew.kickoff()
-        self.save_markdown(result)
+        self.save_result(result)
         return result
   
-    def save_markdown(self, content, filename="news"):
-        now = datetime.datetime.now().strftime("%Y-%m-%d")
+    def save_result(self, content, filename="blog"):
+        now = datetime.now().strftime("%Y-%m-%d")
 
         # Create the filename with timestamp
-        filename_path = f"blog/news/{now}_{filename}.md"
+        filename_path = f"blog/{now}_{filename}.md"
 
         # Save the content to the file
         with open(filename_path, "w") as file:
