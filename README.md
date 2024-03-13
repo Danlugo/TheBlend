@@ -3,7 +3,7 @@
 
 # TheBlend
 
-Its a program that uses crewai to setup various AI agents to search the internet for the latest AI, prepare the content for blog usage and then serves them into a RSS feed using Streamlit. The RSS feed is then consume by a GoDaddy website as a blog. The content creation is all done automatically by AI.
+Its a program that uses crewai to setup various AI agents to search the internet for the latest AI stories, prepare the content for a blog and then serves them on a RSS feed using Streamlit. The RSS feed is then consumed by a GoDaddy website as a blog. The content creation is all done automatically by AI.
 
 
 ## How does it work?
