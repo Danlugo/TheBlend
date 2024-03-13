@@ -1,0 +1,4 @@
+# Update keys for the llm you need to use.
+OPENAI_API_KEY = ""
+ANTHROPIC_API_KEY = ""
+SERPER_API_KEY= ""

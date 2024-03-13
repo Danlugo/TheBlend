@@ -1,8 +1,8 @@
 from crewai import Crew
 from textwrap import dedent
 
-from agents.news.NewsAgents import NewsAgents
-from agents.news.NewsTasks import NewsTasks
+from crew.news.NewsAgents import NewsAgents
+from crew.news.NewsTasks import NewsTasks
 
 from dotenv import load_dotenv
 import datetime
