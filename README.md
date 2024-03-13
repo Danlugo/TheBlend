@@ -1,10 +1,16 @@
 ![Alt text](https://github.com/Danlugo/TheBlend/blob/main/images/theblendai_logo.png "Logo")
 
 
-### TheBlend
+# TheBlend
 
-Its a program that uses crewai to search the internet for the latest AI and then serves them into a RSS feed so it can be exposed in a website as blogs.
+Its a program that uses crewai to setup various AI agents to search the internet for the latest AI, prepare the content for blog usage and then serves them into a RSS feed using Streamlit. The RSS feed is then consume by a GoDaddy website as a blog. The content creation is all done automatically by AI.
 
+
+## How does it work?
+The app uses Crewai concepts (Crew) to run multiple LLMs (Agents) to do the work (Tasks). 
+The Agents & Tasks are setup to search the internet for the latest AI technologies and asked to resturned the results into a specific format.
+Using the same code, an Streamlit (Web interface) app reads the results and expose them into a RSS feed.
+Another Website is used to read the RSS as blog and expose it in a nicer format.
 
 
 ## Mac Dev Environment Setup
@@ -26,12 +32,13 @@ Its a program that uses crewai to search the internet for the latest AI and then
 4. Update config file to select topics
 5. Run app.py to run agents
 
-# Deploy to Streamlit in order to be the rss feder
-1. Go to Streamlit, setup an account that points to Github.
-2. Deploy
+## Create a new app in Streamlit in order to be the rss feeder
+1. Go to Streamlit, create new an account
+2. Create a new app that points to that points to Github and deploy
+For this project, Streamlit app is https://theblend.streamlit.app/
 
 
-# Finally, It uses a GoDaddy website to show the feeds.
+## Finally, It uses a GoDaddy website to show the feeds.
 Check out TheBlend.ai
 
 ![Alt text](https://github.com/Danlugo/TheBlend/blob/main/images/TheBlendai_home.png "Home")
