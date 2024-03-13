@@ -1,11 +1,14 @@
-### TheBlend
-Code that automatically populates a blog with latest news, deep dives and code updates
+![Alt text](https://github.com/Danlugo/TheBlend/blob/main/images/theblendai_logo.png "Logo")
 
+
+### TheBlend
+
+Its a program that uses crewai to search the internet for the latest AI and then serves them into a RSS feed so it can be exposed in a website as blogs.
 
 
 
 ## Mac Dev Environment Setup
-- 
+
 1. Install Brew https://brew.sh/
 2. Install Python 3.12 https://www.python.org/downloads/release/python-3122/ (download, run macos installer)
 3. Install Visual Studio https://visualstudio.microsoft.com/vs/mac/ 
@@ -22,3 +25,14 @@ Code that automatically populates a blog with latest news, deep dives and code u
 3. Type pip install -r requirements.txt
 4. Update config file to select topics
 5. Run app.py to run agents
+
+# Deploy to Streamlit in order to be the rss feder
+1. Go to Streamlit, setup an account that points to Github.
+2. Deploy
+
+
+# Finally, It uses a GoDaddy website to show the feeds.
+Check out TheBlend.ai
+
+![Alt text](https://github.com/Danlugo/TheBlend/blob/main/images/TheBlendai_home.png "Home")
+![Alt text](https://github.com/Danlugo/TheBlend/blob/main/images/TheBendai_blog.png "Blog")
