@@ -13,7 +13,7 @@ Using the same code, an Streamlit (Web interface) app reads the results and expo
 Another Website is used to read the RSS as blog and expose it in a nicer format.
 
 
-## Mac Dev Environment Setup
+### Mac Dev Environment Setup
 
 1. Install Brew https://brew.sh/
 2. Install Python 3.12 https://www.python.org/downloads/release/python-3122/ (download, run macos installer)
@@ -22,7 +22,7 @@ Another Website is used to read the RSS as blog and expose it in a nicer format.
 5. Open Visual Studio App
 6. In Visual Studio, click open and select new folder created by github
 
-## Setup Python Virtual Environment
+### Setup Python Virtual Environment
 1. In Visual Studio, click view from top menu and select terminal
 2. In the terminal window, copy paste below code
     python3.12 -m venv env
@@ -32,13 +32,13 @@ Another Website is used to read the RSS as blog and expose it in a nicer format.
 4. Update config file to select topics
 5. Run app.py to run agents
 
-## Create a new app in Streamlit in order to be the rss feeder
+### Create a new app in Streamlit in order to be the rss feeder
 1. Go to Streamlit, create new an account
 2. Create a new app that points to that points to Github and deploy
 For this project, Streamlit app is https://theblend.streamlit.app/
 
 
-## Finally, It uses a GoDaddy website to show the feeds.
+### Finally, It uses a GoDaddy website to show the feeds.
 Check out TheBlend.ai
 
 ### Main Page
