@@ -47,7 +47,7 @@ Check out TheBlend.ai
 
 ### Blog
 
-![Alt text](https://github.com/Danlugo/TheBlend/blob/main/images/TheBendai_blog.png "Blog")
+![Alt text](https://github.com/Danlugo/TheBlend/blob/main/images/TheBlendai_blog.png "Blog")
 
 
 
