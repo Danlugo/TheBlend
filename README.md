@@ -29,10 +29,7 @@ The Agents & Tasks are setup to search the internet for the latest AI technologi
 3. Type pip install -r requirements.txt
 4. Update the .env files with needed keys and the Agent and Tasks files to change topics.
 5. Run news_crew.py to run agents
-
-
-### Finally, It uses a GoDaddy website to show the feeds.
-Check out TheBlend.ai
+6. After the code completes, the results are pasted on the blog site.
 
 
 ### Main Page
