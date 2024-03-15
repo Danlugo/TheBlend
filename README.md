@@ -34,11 +34,9 @@ The Agents & Tasks are setup to search the internet for the latest AI technologi
 2. After the code completes, the results are saved on the blog folder.
 3. Copy content from the output of the blog folder and paste it on the blog site.
 
-
+# TheBlend.ai Blog Site:
 ### Main Page
 ![Alt text](https://github.com/Danlugo/TheBlend/blob/main/images/TheBlendai_home.png "Home")
-
-
 
 ### Blog
 ![Alt text](https://github.com/Danlugo/TheBlend/blob/main/images/TheBlendai_blog.png "Blog")
