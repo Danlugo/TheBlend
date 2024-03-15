@@ -11,7 +11,7 @@ The app uses Crewai concepts (Crew) to run multiple LLMs (Agents) to do the work
 The Agents & Tasks are setup to search the internet for the latest AI technologies and asked to resturn the results into a specific format so they can later be posted in a website.
 
 
-### Mac Dev Environment Setup
+### Mac Dev Environment Tools
 
 1. Install Brew https://brew.sh/
 2. Install Python 3.12 https://www.python.org/downloads/release/python-3122/ (download, run macos installer)
@@ -20,7 +20,7 @@ The Agents & Tasks are setup to search the internet for the latest AI technologi
 5. Open Visual Studio App
 6. In Visual Studio, click open and select new folder created by github
 
-### Setup Python Virtual Environment
+### Setup the Python Virtual Environment
 1. In Visual Studio, click view from top menu and select terminal
 2. In the terminal window, copy paste below code
     python3.12 -m venv env
@@ -28,8 +28,11 @@ The Agents & Tasks are setup to search the internet for the latest AI technologi
     pip install --upgrade pip
 3. Type pip install -r requirements.txt
 4. Update the .env files with needed keys and the Agent and Tasks files to change topics.
-5. Run news_crew.py to run agents
-6. After the code completes, the results are pasted on the blog site.
+
+###
+1. Run news_crew.py to start the process.
+2. After the code completes, the results are saved on the blog folder.
+3. Copy content from the output of the blog folder and paste it on the blog site.
 
 
 ### Main Page
