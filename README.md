@@ -8,9 +8,7 @@ Its the program used by TheBlend.ai Blog website that uses AI to create blog con
 
 ## How does it work?
 The app uses Crewai concepts (Crew) to run multiple LLMs (Agents) to do the work (Tasks). 
-The Agents & Tasks are setup to search the internet for the latest AI technologies and asked to resturned the results into a specific format.
-Using the same code, an Streamlit (Web interface) app reads the results and expose them into a RSS feed.
-Another Website is used to read the RSS as blog and expose it in a nicer format.
+The Agents & Tasks are setup to search the internet for the latest AI technologies and asked to resturn the results into a specific format so they can later be posted in a website.
 
 
 ### Mac Dev Environment Setup
@@ -29,24 +27,20 @@ Another Website is used to read the RSS as blog and expose it in a nicer format.
     source env/bin/activate
     pip install --upgrade pip
 3. Type pip install -r requirements.txt
-4. Update config file to select topics
-5. Run app.py to run agents
-
-### Create a new app in Streamlit in order to be the rss feeder
-1. Go to Streamlit, create new an account
-2. Create a new app that points to that points to Github and deploy
-For this project, Streamlit app is https://theblend.streamlit.app/
+4. Update the .env files with needed keys and the Agent and Tasks files to change topics.
+5. Run news_crew.py to run agents
 
 
 ### Finally, It uses a GoDaddy website to show the feeds.
 Check out TheBlend.ai
 
-### Main Page
 
+### Main Page
 ![Alt text](https://github.com/Danlugo/TheBlend/blob/main/images/TheBlendai_home.png "Home")
 
-### Blog
 
+
+### Blog
 ![Alt text](https://github.com/Danlugo/TheBlend/blob/main/images/TheBlendai_blog.png "Blog")
 
 
