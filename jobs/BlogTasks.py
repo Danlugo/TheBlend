@@ -4,7 +4,7 @@ from crewai import Task
 from textwrap import dedent
 from datetime import datetime
 
-class NewsTasks():
+class BlogTasks():
   
   def researcher(self, agent, topic):
     return Task(description=dedent(f"""
@@ -24,7 +24,7 @@ class NewsTasks():
         4. 'Urls': List containing the URLs of websites used during the analysis.
         5. 'Date': Date when article was prepared (i.e. {datetime.now().strftime("%Y-%m-%d")}).                                   
 
-        Your final answer MUST be a report
+        Your final answer MUST be a report, keep it brief
         
         {self.__tip_section()}
   
@@ -38,7 +38,7 @@ class NewsTasks():
     return Task(description=dedent(f"""
         Review and synthesize all the analyses provided by the Senior Research Analyst to form a comprehensive report.                                            
 
-        Your final answer MUST be REPORT. 
+        Your final answer MUST be REPORT, keep it brief. 
 
         {self.__tip_section()}
       """),
@@ -46,10 +46,9 @@ class NewsTasks():
       expected_output=dedent(f"""  
         The report has four sections and you will need to use markdown:
         
-        1. Section 1: Includes overall new blog Title and Summary Analysis
-        2. Section 2: Shows a list for each article provided, and for each article, it shows 'key findings', 'supporting evidence' and any 'optional context'.
-        3. Section 3: A valid list of urls collected during the analysis.
-        4. Section 4: Shows the news blog was created by AI and the date when the report was prepared on {datetime.now().strftime("%Y-%m-%d")} by AI.
+        1. Section 1: Includes overall new blog 'Title', 'Date: {datetime.now().strftime("%Y-%m-%d")}' and 'Summary Analysis' of all articles.
+        2. Section 2: Shows a list for each article 'Title', 'key findings', 'supporting evidence', 'optional context', 'Urls' and 'Date'.
+        4. Section 3: Shows blog was created by AI'.
       """)
     )
 

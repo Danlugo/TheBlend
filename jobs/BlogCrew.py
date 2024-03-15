@@ -1,20 +1,20 @@
 # template from https://github.com/joaomdmoura/crewAI-examples/tree/main/starter_template
 
 from crewai import Crew
-from crew.NewsAgents import NewsAgents
-from crew.NewsTasks import NewsTasks
+from BlogAgents import BlogAgents
+from BlogTasks import BlogTasks
 from dotenv import load_dotenv
 from datetime import datetime
 
 load_dotenv()
 
-class NewsCrew:
+class BlogCrew:
     def __init__(self, topic):
         self.topic = topic
 
     def run(self):
-        agents = NewsAgents()
-        tasks = NewsTasks()
+        agents = BlogAgents()
+        tasks = BlogTasks()
 
         research_agent = agents.researcher()
         writer_agent = agents.writer()
@@ -47,9 +47,9 @@ class NewsCrew:
 if __name__ == "__main__":
   print("## Welcome to your blog crew")
   print('-------------------------------')
-  topic = """ Latest AI top stories """
-  crew = NewsCrew(topic)
-  results = crew.run()
+  topic = """ Best LLM for coding as of 2024-03-15 """
+  c = BlogCrew(topic)
+  results = c.run()
 
   print("\n\n########################")
   print("## Here is the Report")

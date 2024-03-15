@@ -1,8 +1,8 @@
 # template from https://github.com/joaomdmoura/crewAI-examples/tree/main/starter_template
 
 from crewai import Agent
-from tools.browser_tools import BrowserTools
-from tools.search_tools import SearchTools
+#from tools.browser_tools import BrowserTools
+from search_tools import SearchTools
 from langchain_community.llms import OpenAI, Ollama
 from langchain_openai import ChatOpenAI
 from textwrap import dedent
@@ -13,13 +13,13 @@ from crewai_tools import (
     WebsiteSearchTool,
     ScrapeWebsiteTool)
 
-class NewsAgents:
+class BlogAgents:
 
     def __init__(self):
         self.OpenAIGPT35 = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.7)
         self.OpenAIGPT4 = ChatOpenAI(model_name="gpt-4", temperature=0.7)
         self.Ollama = Ollama(model="llama2", base_url="http://10.0.0.148:11434")
-        self.default_llm = self.Ollama
+        self.default_llm = self.OpenAIGPT4 #self.Ollama
         self.search_tool = SerperDevTool()
         self.scrape_website_tool = ScrapeWebsiteTool()
 
