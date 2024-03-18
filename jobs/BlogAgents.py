@@ -18,8 +18,9 @@ class BlogAgents:
     def __init__(self):
         self.OpenAIGPT35 = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.7)
         self.OpenAIGPT4 = ChatOpenAI(model_name="gpt-4", temperature=0.7)
-        self.Ollama = Ollama(model="llama2", base_url="http://10.0.0.148:11434")
-        self.default_llm = self.OpenAIGPT4 #self.Ollama
+        self.Ollama = Ollama(model="openhermes", base_url="http://10.0.0.148:11434")
+        self.default_llm = self.OpenAIGPT4
+        #self.default_llm = self.Ollama        
         self.search_tool = SerperDevTool()
         self.scrape_website_tool = ScrapeWebsiteTool()
 

@@ -47,7 +47,8 @@ class BlogCrew:
 if __name__ == "__main__":
   print("## Welcome to your blog crew")
   print('-------------------------------')
-  topic = """ Best LLM for coding as of 2024-03-15 """
+  today = datetime.now().strftime("%Y-%m-%d")
+  topic = f""" Top 5 tech news for 2024-03-17 """
   c = BlogCrew(topic)
   results = c.run()
 
