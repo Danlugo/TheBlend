@@ -18,13 +18,11 @@ class BlogTasks():
 
         AFTER COLLECTING THE INFORMATION,USE BELOW EXAMPLE ON HOW TO FORMAT THE DATA FOR EACH ARTICLE:
 
-        1. 'Key Finding': Briefly state the main finding.
-        2. 'Supporting Evidence': Provide a statistic or quote from a reliable source to substantiate the claim. 
-        3. 'Optional Context': If relevant, include a sentence or two explaining the article or finding.
-        4. 'Urls': List containing the URLs of websites used during the analysis.
-        5. 'Date': Date when article was prepared (i.e. {datetime.now().strftime("%Y-%m-%d")}).                                   
+        1. 'Key Finding': Briefly state the main finding and supporting evidence.
+        2. 'Optional Context': If relevant, include a sentence or two explaining the article or finding.
+        3. 'Urls': List containing the URLs of websites used during the analysis.
 
-        Your final answer MUST be a report, keep it brief
+        Your final answer MUST be a report
         
         {self.__tip_section()}
   
@@ -46,9 +44,9 @@ class BlogTasks():
       expected_output=dedent(f"""  
         The report has four sections and you will need to use markdown:
         
-        1. Section 1: Includes overall new blog 'Title', 'Date: {datetime.now().strftime("%Y-%m-%d")}' and 'Summary Analysis' of all articles.
-        2. Section 2: Shows a list for each article 'Title', 'key findings', 'supporting evidence', 'optional context', 'Urls' and 'Date'.
-        4. Section 3: Shows blog was created by AI'.
+        1. Includes overall new blog 'Title', 'Date: {datetime.now().strftime("%Y-%m-%d")}' and 'Summary Analysis' of all articles.
+        2. Shows a list for each article 'Title', 'key findings and supporting evidence', 'optional context', 'Urls' and 'Date'.
+        4. Shows blog was created by AI'.
       """)
     )
 

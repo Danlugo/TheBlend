@@ -5,6 +5,7 @@ from BlogAgents import BlogAgents
 from BlogTasks import BlogTasks
 from dotenv import load_dotenv
 from datetime import datetime
+from FormatOutput import FormatOutput
 
 load_dotenv()
 
@@ -45,14 +46,12 @@ class BlogCrew:
 
 
 if __name__ == "__main__":
-  print("## Welcome to your blog crew")
-  print('-------------------------------')
-  today = datetime.now().strftime("%Y-%m-%d")
-  topic = f""" Top 5 tech news for 2024-03-17 """
-  c = BlogCrew(topic)
-  results = c.run()
-
-  print("\n\n########################")
-  print("## Here is the Report")
-  print("########################\n")
-  print(results)
+    print('-------------------------------')
+    today = datetime.now().strftime("%Y-%m-%d")
+    topic = f""" Top 5 NVIDIA News for {today} """
+    c = BlogCrew(topic)
+    c.run()
+    f = FormatOutput()
+    results = f.run()
+    print(results)
+    print('-------------------------------')
